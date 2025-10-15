@@ -1,5 +1,5 @@
 describe('Car Rental button navigation', () => {
-  it('Clicks Car Rental button and Verify that Car rental page is displayed', () => {
+  it('Clicks Car Rental button', () => {
     cy.visit('https://www.booking.com/');
 
     // Verify homepage loaded

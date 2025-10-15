@@ -1,5 +1,5 @@
 describe('Car Rental button navigation', () => {
-  it('Clicks Car Rental button and Verify that Car rental page is displayed', () => {
+  it('Clicks Car Rental button', () => {
     cy.visit('https://www.booking.com/');
 
     // Verify homepage loaded
@@ -7,6 +7,9 @@ describe('Car Rental button navigation', () => {
 
     // Click Car Rental button and confirm click does not error
     cy.get('#cars').should('be.visible').click({ force: true });
+
+    // Optional: verify the href exists (redirect URL)
+    cy.get('#cars').invoke('attr', 'href').should('include', '/cars');
 
     // Verify that Car Rental page loaded successfully
     cy.get('[data-testid="supplier-list-logo"]').should('be.visible');

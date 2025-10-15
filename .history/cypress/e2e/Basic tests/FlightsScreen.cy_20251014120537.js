@@ -8,7 +8,8 @@ describe('Flights button navigation', () => {
     // Click Flights button and confirm click does not error
     cy.get('#flights').should('be.visible').click({ force: true })
     
-
+    // Optional: verify the href exists (redirect URL)
+    cy.get('#flights').invoke('attr', 'href').should('include', '/c?')
   })
 })
 

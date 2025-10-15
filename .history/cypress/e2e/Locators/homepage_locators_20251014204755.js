@@ -3,9 +3,7 @@ export const homepage_locators = {
   googleButtonContent: '.access-panel__social-button-content',
   bookingLogo: '[data-testid="header-booking-logo"]',
   flightsButton: '#flights',
-  carsButton: '#cars',
-  attractionsButton: '#attractions',
+  carsButton: '#cars', 
 };
-
 
 

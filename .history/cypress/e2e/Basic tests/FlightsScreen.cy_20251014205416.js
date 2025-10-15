@@ -8,7 +8,6 @@ describe('Flights button navigation', () => {
     // Click Flights button and confirm click does not error
     cy.get('#flights').should('be.visible').click({ force: true })
     
-
   })
 })
 
